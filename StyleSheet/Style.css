@@ -1,0 +1,185 @@
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+body{
+ min-width: 1242.8px;
+ min-height: 3360px;
+ 
+}
+
+/*
+ *
+ *Style Tag
+ *
+ */
+
+p,a{
+ line-height:10px;
+ font-size:60px;
+ font-weight:bold;
+ text-align:center;
+}
+
+a{
+ color:white;
+}
+
+
+div{
+   float:none;
+   margin:10px;
+   padding:20px;
+   border-radius:30px;
+   overflow:hidden;
+}
+
+
+/*
+ *
+ *Style Class
+ *
+ */
+
+.logo{
+   width:auto;
+   height:900px;
+   border-radius:100px;
+   margin:30px;
+   background-color:darkred;
+	position: relative;
+}
+
+.logoImg{
+  width:30%;
+  height:90%;
+  border-radius:50%;
+  margin:30px;
+  float:right;
+}
+
+.left{
+   background-color:rgba(0,0,0,0);
+   width:30%;
+   height:auto;
+   float:left;
+   margin:40px 0px 40px;
+
+}
+video{
+ 
+ width:100%;
+ height:100%;
+}
+.right{
+   background-color:rgba(0,0,0,0);
+   max-width:65%;
+   min-width:849.8px;
+   height:auto;
+   float:left;
+   margin-top:40px; 
+ 
+}
+
+.card{
+  width:40%;
+  height:900px;
+  margin-top:30px;
+  margin-left:30px;
+  
+  position:relative;
+  transform-style:preserve-3d; 
+  transition:all .5s ease-in-out;
+  float:right;
+}
+
+.card:hover{
+ transform: rotateY(-30deg)  rotateX(30deg) ;
+}
+
+
+.logo .left li{
+	
+	width: 400px;
+	height: 100px;
+	background-color: aliceblue;
+	margin: 40px;
+	border:10px solid black;
+	text-align: center;
+
+	
+}
+
+.logo .left ul{
+		 
+	display:flex;
+	position: absolute;
+	bottom: 10px;
+	left:10px;
+
+	
+}
+.logo .left a{
+ color:black;
+}
+.logo .left li:hover{
+ background-color: pink;
+ 
+}
+.logo .left li a:hover{
+color: blue;
+ 
+}
+
+.right .card a:hover{
+color:orange; 
+}
+
+/*
+ *
+ *Style attributes
+ *
+ */
+
+
+
+
+
+img[title="_social"],img[title="_2"],img[title="_3"]{
+ width:200px;
+ height:200px;
+ border-radius:50%;
+ position:fixed;
+ right:10px;
+ bottom:10px;
+ z-index:1;
+}
+img[title="_2"]{
+ right:220px;
+ bottom:10px;
+}
+img[title="_3"]{
+ right:430px;
+ bottom:10px;
+}
+img[title="_logo"]
+{
+ width:100%;
+ height:100%;
+ border-radius:50%; 
+}
+
+img[alt="A"]
+{
+ width:100%;
+ height:80%;
+ border-radius:100px;
+}
+
+img[alt="left"]{
+ width:100%;
+ height:100%;
+
+}

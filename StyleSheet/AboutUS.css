@@ -1,0 +1,280 @@
+*{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+
+body {
+
+ 
+}
+
+.container{
+ width:19%;
+ height:auto;
+ margin-left:1%;
+ padding:5px;
+ float:left;
+ font-family:Arial,Tahoma;
+ font-weight:bold;
+ text-align:center;
+
+ 
+}
+
+/*
+ *
+ *Style Box
+ *
+ */
+
+.container .box{
+
+ line-height:50px;
+ position:relative;
+ color:white;
+ z-index:2;
+}
+
+.animation .box {
+ background-color:darkred;
+}
+
+/*
+ *
+ *Style Tag
+ *
+ */
+
+.container a{
+ display:inline-block;
+ width:100%;
+ height:50px;
+ line-height:50px;  
+ background-color:black;
+ color:white;
+ text-decoration:none;
+ position:relative;
+ top:-50px;
+ z-index:1;
+ transition:height 1s 
+ 
+}
+
+.container img{
+ width:100%;
+ height:100%;
+}
+
+
+
+
+ /*
+ *Style before
+ */
+
+.normal:before{
+ display:block;
+ margin-bottom:10px;
+ content:"Normal Hover";
+}
+
+.transition:before{
+ display:block;
+ margin-bottom:10px;
+ content:"Transition Hover";
+}
+.animation:before{
+ display:block;
+ margin-bottom:10px;
+ content:"Engineer";
+}
+
+
+/*
+ *Style Hover
+ */
+
+.container:hover a{
+ top:0;
+}
+
+.transition:hover a{
+ width:100%;
+ height:400px;
+ transition: all 1s ease-in-out ;
+}
+
+.animation:hover a{
+ width:100%;
+ height:400px;
+ transition:all 1s ease-in-out ;
+ animation:animi 1s ease-in-out;
+}
+
+/*
+ *Style Animation
+ */
+
+@keyframes animi {
+ 
+     0%{
+         transform:rotateX(-50deg);
+           }
+    
+     20%{
+         transform:rotateX(50deg);
+           }
+    
+     40%{
+         transform:rotateX(-30deg);
+           }
+           
+     80%{
+         transform:rotateX(30deg);
+           }
+     100%{
+         transform:rotateX(0deg);
+           }
+ 
+}
+
+
+.card {
+         width:300px;
+         height:400px;
+         margin:50px;
+         color:#777;
+         position:relative;
+         float:left;
+         transform-style:preserve-3d;
+         transition:all 1s ease-in-out;
+}
+.card:hover{
+ transform:rotateY(180deg)
+}
+.card > div {
+         position: absolute;
+         top:0;
+         left:0;
+         width:100%;
+         height:100%;
+         background-color:#EEE;
+         padding:10px;
+         border-radius:10px;
+         border:1px solid #CCC;
+         Font-family:Arial,Tahoma;
+         text-align:center;
+
+}
+.card .front {
+ z-index:2;
+}
+
+
+.card .front header{
+ background-color:darkred;
+ width:100%;
+ height:80px;
+ margin-bottom:50px;
+ border-radius:10px 10px 0 0;
+}
+.card .front img{
+ width:100px;
+ height:100px;
+ border-radius:50%;
+ position:relative;
+ top:20px;
+ 
+}
+
+.card .front h3{
+ margin-bottom:5px;
+}
+
+.card .front p{
+display:inline-block;
+width:90%;
+line-height:1.7px; 
+}
+
+.card .front span{
+display:inline-block;
+margin-top:10px;
+color:red;
+font-weight:bold;
+}
+
+.card .back{
+z-index:1;
+transform:rotateY(180deg);
+}
+
+.card .back li{
+ font-size: small;
+ font-weight:bold;
+ text-align:left;
+}
+.card .back li span{
+ font-style:italic;
+ color:blue;
+ line-height:2;
+}
+
+.card .front > span:after{
+ content: " A Prosonal Information";
+}
+
+
+
+.GoBack{
+	position:fixed;
+	bottom:10px;
+	left:10px;
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	background-color:blue;
+	
+}
+
+
+.GoBack img{
+	width:100%;
+	height:100%;
+	border-radius:90px;
+}
+
+
+
+
+@media (min-width:1500px) {
+    .container{
+     display:none;
+    }
+ 
+ 
+}
+
+@media (max-width:1501px) {
+    .card{
+     display:none;
+    }
+ 
+ 
+}
+
+@media (max-width:990px) {
+    .container{
+     display:none;
+    }
+    
+    .card{
+     display: inline-block;
+    }
+ 
+ 
+}
+
+
